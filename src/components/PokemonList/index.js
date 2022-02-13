@@ -3,19 +3,20 @@ import { Grid } from 'semantic-ui-react';
 // Components
 import PokemonCard from './PokemonCard';
 
-const PokemonList = () => {
-    // Array de pokemons
-    const pokemon=Array(20).fill('');
-
+const PokemonList = ({listPokemons}) => {
     return (
         <Grid className="pokemonList">
             {
-                pokemon.map( pokemon => (
-                    <PokemonCard/>
+                listPokemons.map( (pokemon, id) => (
+                    <PokemonCard pokemon={pokemon} key={`pokemon-${id}`} />
                 ))
             }
         </Grid>
     );
+}
+
+PokemonList.defaultProps={
+    listPokemons: []
 }
  
 export default PokemonList;

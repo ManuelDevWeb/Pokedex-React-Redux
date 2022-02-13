@@ -1,3 +1,5 @@
+• Configuración e inicio de Proyecto •
+
 1. Crear y preparar el proyecto. 
 
 2. Crear la carpeta: src/components/PokemonList
@@ -7,3 +9,33 @@
 4. Crear el componente: src/components/PokemonList/PokemonCard.js
 
 5. Crear el archivo: src/components/PokemonList/styles.css
+
+• API Pokemon •
+
+6. Instalar axios: npm i axios
+
+7. Crear el archio: .ENV
+
+8. Crear la carpeta: src/api 
+
+9. Crear el archivo: src/api/config.js
+
+10. Crear el archio: src/api/getPokemons.js
+
+• React.js + Redux •
+
+11. Instalar redux: npm i redux react-redux
+
+12. Crear la carpeta: src/actions
+
+13. Crear el archivo: src/actions/type.js
+
+14. Crear el archivo: src/actions/index.js
+
+15. Crear la carpeta: src/reducers
+
+16. Crear el archivo: src/reducers/pokemonReducer.js
+
+17. Crear el archivo: src/store.js
+
+17. Conectar el store a toda nuestra aplciación en el archivo: index.js
