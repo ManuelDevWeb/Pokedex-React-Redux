@@ -1,1 +1,9 @@
-1. Ejecutar: npx create-react-app
+1. Crear y preparar el proyecto. 
+
+2. Crear la carpeta: src/components/PokemonList
+
+3. Crear el componente: src/components/PokemonList/index.js
+
+4. Crear el componente: src/components/PokemonList/PokemonCard.js
+
+5. Crear el archivo: src/components/PokemonList/styles.css

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Grid, Search } from 'semantic-ui-react';
+
+// Styles
 import './styles.css';
 
 export default function SearchBar() {

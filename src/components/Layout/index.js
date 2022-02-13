@@ -1,5 +1,9 @@
 import React from 'react';
+
+// Components
 import Menu from '../Menu';
+
+// Styles
 import './styles.css';
 
 const Layout = ({ children }) => {
