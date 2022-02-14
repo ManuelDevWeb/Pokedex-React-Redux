@@ -38,4 +38,10 @@
 
 17. Crear el archivo: src/store.js
 
-17. Conectar el store a toda nuestra aplciación en el archivo: index.js
+18. Conectar el store a toda nuestra aplciación en el archivo: index.js
+
+• Middlewares •
+
+19. Crear la carpeta: src/middlewares
+
+20. Crear el archivo: src/middlewares/index.js

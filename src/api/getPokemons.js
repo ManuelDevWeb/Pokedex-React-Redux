@@ -6,5 +6,4 @@ export const getPokemons = (limit = 171) =>
     axiosInstance
     .get(`/pokemon?limit=${limit}`)
     .then((response) => response.data)
-    .catch((error) => console.log(error)
-);
+    .catch((error) => console.log(error));
