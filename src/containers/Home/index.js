@@ -1,8 +1,11 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 
+// Funciones API
+import { getPokemons } from '../../api/getPokemons';
+
 // Actions
-import {getPokemonsWidthDetails} from '../../actions';
+import {setPokemonsWithDetails, setError} from '../../actions';
 
 // Components
 import Searcher from '../../components/Searcher';
@@ -20,8 +23,16 @@ function Home() {
   ));
 
   useEffect(()=>{
-    // Disparando la acción (REDUX THUNK)
-    dispatch(getPokemonsWidthDetails());
+      // Obteniendo listado de pokemons
+      getPokemons()
+        .then((res) => {
+          // Disparando la acción (REDUX THUNK)
+          // Enviamos array con la url y nombre de cada pokemon
+          dispatch(setPokemonsWithDetails(res.results));
+        })
+        .catch((error) => {
+          dispatch(setError({ message: "Oops! Something went wrong.", error }));
+        });
   },[dispatch])
 
   return (
