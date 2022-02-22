@@ -53,3 +53,7 @@
 22. Crear el nuevo action en el archivo: src/actions/index.js
 
 23. Modificar el archio: src/store.js
+
+• Mejoras en la UI • 
+
+24. Crear el componente: src/components/Loader/index.js
