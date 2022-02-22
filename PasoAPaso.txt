@@ -45,3 +45,11 @@
 19. Crear la carpeta: src/middlewares
 
 20. Crear el archivo: src/middlewares/index.js
+
+• Redux Thunk •
+
+21. Instalar redux-thunk: npm i redux-thunk
+
+22. Crear el nuevo action en el archivo: src/actions/index.js
+
+23. Modificar el archio: src/store.js
